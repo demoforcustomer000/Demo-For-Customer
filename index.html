@@ -5179,7 +5179,6 @@ function renderNewInvoice(content, preselectedCustomerId){
         }
         updateSummary();
       };
-      inp.onblur = () => renderLines();
     });
 
     $$('[data-del]', box).forEach(b => b.onclick = () => {
@@ -6364,7 +6363,6 @@ function openPurchaseBillForm(supplier, existing, onSaved){
           }
           updateBillSummary();
         };
-        inp.onblur = () => renderBillLines();
       });
 
       box.querySelectorAll('[data-del]').forEach(b => b.onclick = () => {
