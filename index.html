@@ -104,16 +104,16 @@ textarea.input{resize:vertical;min-height:60px}
 .card:hover{transform:translateY(-3px);box-shadow:var(--shadow-md);border-left-color:var(--cyan)}
 /* No-hover variant used on customer profile cards, invoice preview, statement */
 .card.no-hover{cursor:default}
-.card.no-hover:hover{transform:none;box-shadow:var(--shadow-sm);border-left-color:var(--border)}
+.card.no-hover:hover{transform:none !important;box-shadow:var(--shadow-sm) !important}
 
-/* Color variants — left border color */
-.card-blue{border-left-color:#3b82f6}.card-blue:hover{border-left-color:#2563eb}
-.card-cyan{border-left-color:var(--cyan)}.card-cyan:hover{border-left-color:var(--cyan-dark)}
-.card-green{border-left-color:var(--green)}.card-green:hover{border-left-color:var(--green-dark)}
-.card-amber{border-left-color:var(--amber)}.card-amber:hover{border-left-color:var(--amber-dark)}
-.card-purple{border-left-color:var(--purple)}.card-purple:hover{border-left-color:var(--purple-dark)}
-.card-pink{border-left-color:var(--pink)}.card-pink:hover{border-left-color:var(--pink-dark)}
-.card-red{border-left-color:var(--red)}.card-red:hover{border-left-color:var(--red-dark)}
+/* Color variants — left border color (only on hover for normal cards) */
+.card-blue{border-left-color:#3b82f6}.card-blue:not(.no-hover):hover{border-left-color:#2563eb}
+.card-cyan{border-left-color:var(--cyan)}.card-cyan:not(.no-hover):hover{border-left-color:var(--cyan-dark)}
+.card-green{border-left-color:var(--green)}.card-green:not(.no-hover):hover{border-left-color:var(--green-dark)}
+.card-amber{border-left-color:var(--amber)}.card-amber:not(.no-hover):hover{border-left-color:var(--amber-dark)}
+.card-purple{border-left-color:var(--purple)}.card-purple:not(.no-hover):hover{border-left-color:var(--purple-dark)}
+.card-pink{border-left-color:var(--pink)}.card-pink:not(.no-hover):hover{border-left-color:var(--pink-dark)}
+.card-red{border-left-color:var(--red)}.card-red:not(.no-hover):hover{border-left-color:var(--red-dark)}
 
 .card-title{
   font-size:15px;font-weight:600;margin-bottom:14px;
